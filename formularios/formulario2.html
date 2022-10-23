@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+<header>
+    <h1>FORMULARIOS EN HTML</h1>
+</header>
+<main>
+    <section>
+        <h2>Ejemplo 2 - FECHAS</h2>
+        <form>
+            <label for="">Fecha:</label>
+            <input
+            type="date"
+            name="fecha" />
+            <br>
+            <br>
+            <label for="">Hora:</label>
+            <input
+            type="time"
+            name="hora" />
+            <br>
+            <br>
+            <label for="">FECHA Y HORA:</label>
+            <input
+            type="datetime-local"
+            name="fechahora" />
+            <br>
+            <br>
+            <label for="">MES:</label>
+            <input
+            type="mont"
+            name="mes" />
+
+            <br>
+            <br>
+            <label for="">SEMANA:</label>
+            <input
+            type="week"
+            name="semana" />
+
+        </form>
+           
+    </section>
+    <section>
+    <h2>FORMULARIOS DE CASILLAS O RADIOBUTTONS</h2>
+    <form>
+        <h3>CHECKBOX</h3>
+        <label for="">COMIDAS FAVORITAS:</label>
+        <br />
+        <label for="">Carne:</label>
+        <input type="checkbox" name="comidas" />
+        <br />
+        <label for="">Pollo:</label>
+        <input type="checkbox" name="comidas" />
+        <br />
+        <label for="">Venado:</label>
+        <input type="checkbox" name="comidas" />
+        <br />
+        <label for="">Puerco:</label>
+        <input type="checkbox" name="comidas" />
+        <br />
+        <h3>RADIOBUTTONS</h3>
+        <label for="">SEXO:</label>
+        <br />
+        <label for="">Hombre:</label>
+        <input type="radio" name="sexo" />
+        <label for="">MUJER:</label>
+        <input type="radio" name="sexo" />
+        <label for="">PREFIERO NO DECIRLO:</label>
+        <input type="radio" name="sexo" />
+
+    </form>
+  </section>
+
+  <section>
+    <h2>FORMULARIOS DE CAMPO DE LISTAS</h2>
+    <form>
+        <select name="Pais"> 
+        <option value="El SALVADOR">El Salvador</option>
+        <option value="Panama">Panama</option> 
+        <option value="Inglaterra">Inglaterra</option>  
+        <option value="EEUU">EEUU</option> 
+        <option value="Guatemala">Guatemala</option>
+    </select>
+
+    <select name="combo" multiple>
+    <optgroup label"Opciones basicas">
+    <option value="1" label="opcion 1"</option>    
+  </optgroup>
+
+  <optgroup>
+    <optgroup label"Opciones avanzadas">
+    <option value="2" label="opcion 2"</option>
+   <option value="3" label="opcion 3"</option>
+</optgroup>
+</select>
+
+<input type="text" list="items"/>
+<details id="items">
+<option value="1">Opcion 1</option>
+<option value="2">Opcion 2</option>
+<option value="3">Opcion 3</option>
+</details>
+
+  </form>
+</section>
+
+<section>
+    <h2>CAMPO DE COLOR Y ARCHIVO</h2>
+    <form
+    enctype="multipart/form-date"
+    action="formulario2.html"
+    method="post"
+    name="formularioregistro"
+    >
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name"/>
+    </fieldset>
+    <fieldset>
+        <legend>Color y archivos</legend>
+        <label for="color">selecciona el color deseado</label>
+        <input type="color" name="color" id="color" value="#1BF44A"/>
+
+       <br />
+       <br />
+       <label for="adjunto">Seleccione un archivo</label>
+
+       <input
+       type="file"
+       name="adjunto"
+       id="adjunto"
+       accept="pdf,.jpg,.png"
+       multiple
+       />
+    </fieldset>
+    <br />
+    <br />
+    <input
+    type="submit"
+    name="enviardatos"
+    value="REGISTRAR INFORMACION"
+    />
+
+    <button type="buton">REGISTRAR</button>
+    <button type="reset">LIMPIAR DATOS DEL FORMULARIO</button>
+    </form>
+</section>
+
+
+</main>
+
+<footer>
+    <h3>
+     &copy:   copyrgth:Sara Santos
+    </h3>
+</footer>
+</body>
+</html>
